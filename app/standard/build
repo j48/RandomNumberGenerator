@@ -1,0 +1,3 @@
+#!/bin/sh
+cd $(dirname $0)
+docker image build --no-cache --force-rm -f ../standard/Dockerfile -t offchain-python-random-uint .. $@
